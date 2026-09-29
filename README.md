@@ -1,5 +1,4 @@
 # GameVault
-
 Aplicație pentru gestionarea și evidența colecției personale de jocuri video.
 Permite urmărirea jocurilor în desfășurare, a titlurilor finalizate, precum și a platformelor, genurilor și expansiunilor deținute.
 
