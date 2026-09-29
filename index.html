@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GameVault - Mockup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 4.2. Antetul -->
+  <header class="app-header">
+    <h1>GameVault</h1>
+    <p>Organizează-ți colecția de jocuri video pe platforme, genuri și expansiuni.</p>
+    <p class="app-count">3 jocuri, dintre care 2 în desfășurare</p>
+  </header>
+
+  <!-- 4.3. Conținutul principal pe 2 coloane -->
+  <main class="container">
+    <!-- Panoul din stânga: Formularul -->
+    <section class="panel">
+      <h2>Adaugă joc</h2>
+      <form class="item-form">
+        <label>
+          Titlu joc
+          <input type="text" name="titlu" placeholder="Ex: The Witcher 3" required />
+        </label>
+
+        <label>
+          Platformă
+          <select name="eticheta">
+            <option value="pc">PC</option>
+            <option value="playstation">PlayStation</option>
+            <option value="xbox">Xbox</option>
+          </select>
+        </label>
+
+        <button type="submit">Adaugă</button>
+      </form>
+    </section>
+
+    <!-- Panoul din dreapta: Lista de jocuri -->
+    <section class="panel">
+      <h2>Colecția mea</h2>
+      <!-- Când lista e goală: <p class="empty">Nu există niciun joc adăugat.</p> -->
+      <ul class="item-list">
+        <!-- Element 1: Activ -->
+        <li class="item-card">
+          <div class="card-info">
+            <h3>The Witcher 3</h3>
+            <span class="badge badge-pc">PC</span>
+            <p class="game-details">Gen: RPG &bull; DLC: Hearts of Stone, Blood and Wine</p>
+          </div>
+          <span class="status">În desfășurare</span>
+        </li>
+
+        <!-- Element 2: Finalizat (clasa done) -->
+        <li class="item-card done">
+          <div class="card-info">
+            <h3>Elden Ring</h3>
+            <span class="badge badge-playstation">PlayStation</span>
+            <p class="game-details">Gen: Action-RPG &bull; DLC: Shadow of the Erdtree</p>
+          </div>
+          <span class="status">Terminat</span>
+        </li>
+
+        <!-- Element 3: Activ -->
+        <li class="item-card">
+          <div class="card-info">
+            <h3>Cyberpunk 2077</h3>
+            <span class="badge badge-xbox">Xbox</span>
+            <p class="game-details">Gen: Open-World RPG &bull; DLC: Phantom Liberty</p>
+          </div>
+          <span class="status">În desfășurare</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    Proiect Tehnologii Web
+  </footer>
+</body>
+</html>
